@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3305562}
   - component: {fileID: 2392304}
   - component: {fileID: 64402582463322238}
+  - component: {fileID: 3729494965588772515}
   m_Layer: 0
   m_Name: tree-pyramid
   m_TagString: Untagged
@@ -94,3 +95,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 3ff8fd2009709814d9d109eaec2a2e81, type: 3}
+--- !u!136 &3729494965588772515
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.70932114
+  m_Height: 7.4335194
+  m_Direction: 1
+  m_Center: {x: 0.0031273365, y: 3.7114348, z: 0.00983879}
