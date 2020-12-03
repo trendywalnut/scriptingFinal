@@ -1,0 +1,45 @@
+fileFormatVersion: 2
+guid: 74d9960fcb80a8c41aabb95ed0dd9f3c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - sally2 (1)-Start-0
+  - sally2 (1)-Start-1
+  - sally2 (1)-Start-2
+  - sally2 (1)-Start-3
+  - sally2 (1)-Start-4
+  - sally2 (1)-Start-5
+  - sally2 (1)-Start-6
+  - sally2 (1)-Start-7
+  - sally2 (1)-Start-8
+  - sally2 (1)-finish-9
+  - sally2 (1)-finish-10
+  - sally2 (1)-finish-11
+  - sally2 (1)-finish-12
+  - sally2 (1)-finish-13
+  - sally2 (1)-finish-14
+  - sally2 (1)-finish-15
+  - sally2 (1)-finish-16
+  - sally2 (1)-finish-17
+  - sally2 (1)-finish-18
+  - sally2 (1)-finish-19
+  - sally2 (1)-finish-20
+  - sally2 (1)-finish-21
+  - sally2 (1)-not_feeling_great-22
+  - sally2 (1)-not_feeling_great-23
+  - sally2 (1)-not_feeling_great-24
+  - sally2 (1)-feeling_ok-25
+  - sally2 (1)-feeling_ok-26
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 74d9960fcb80a8c41aabb95ed0dd9f3c,
+    type: 3}
+  localizations: []

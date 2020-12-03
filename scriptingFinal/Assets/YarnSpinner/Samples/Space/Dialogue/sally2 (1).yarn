@@ -1,0 +1,53 @@
+title: Start
+tags: 
+colorID: 0
+position: 858,383
+---
+Witch: Hello.
+Apprentice: Hi.
+Witch: What are you doing up so early?
+Apprentice: I wanted to get started!
+Witch: Eager are you? Well lets start with something simple... 
+Witch: How about... a potion?
+
+Witch: Are you feeling ok?
+[[Not really.|not_feeling_great]]
+[[I'll be fine.|feeling_ok]]
+===
+title: finish
+tags: 
+colorID: 0
+position: 856,-84
+---
+Witch: Alright, well lets get started!
+Witch: First we will need the ingredients!
+Witch: Oh, we seem to be out of a lot of things.
+Witch: Well, We need a few things before we start.
+Witch: I need you to go to the basement to restock what we have up here.
+Apprentice: Okay,  what do you need?
+Witch: Well... first you need a tail of salamander.
+Apprentice: Ok.
+Witch: Also a dried fruit from the oldest tree.
+Apprentice: Yeah. Anything else?
+Witch: Oh, yes! Also the tears of a lover!
+Apprentice: oh.
+Witch: Well then, here's a key to the basement, I'm sure it wont take you long!
+===
+title: not_feeling_great
+tags: 
+colorID: 0
+position: 466,132
+---
+Witch: I'm sorry. Here, try this potion.
+Apprentice: *gulp* That feels... better?
+[[Thanks |finish]]
+===
+title: feeling_ok
+tags: 
+colorID: 0
+position: 1223,137
+---
+Witch: Great.
+
+[[ Continue. |finish]]
+===
