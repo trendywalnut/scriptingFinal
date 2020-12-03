@@ -6,10 +6,6 @@ using System.Collections.Generic;
 namespace Yarn.Unity.Example {
     public class PlayerCharacter : MonoBehaviour {
 
-        public float minPosition = -5.3f;
-        public float maxPosition = 5.3f;
-
-        public float moveSpeed = 1.0f;
 
         public float interactionRadius = 2.0f;
 
@@ -33,18 +29,6 @@ namespace Yarn.Unity.Example {
             if (FindObjectOfType<DialogueRunner>().IsDialogueRunning == true) {
                 return;
             }
-
-            // Move the player, clamping them to within the boundaries 
-            // of the level.
-            var movement = Input.GetAxis("Horizontal");
-            movement += movementFromButtons;
-            movement *= (moveSpeed * Time.deltaTime);
-
-            var newPosition = transform.position;
-            newPosition.x += movement;
-            newPosition.x = Mathf.Clamp(newPosition.x, minPosition, maxPosition);
-
-            transform.position = newPosition;
 
             // Detect if we want to start a conversation
             if (Input.GetKeyDown(KeyCode.Space)) {
