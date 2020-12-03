@@ -6,16 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuFunction : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     public void startGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
