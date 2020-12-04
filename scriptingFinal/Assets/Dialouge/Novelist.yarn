@@ -1,0 +1,41 @@
+title: Novelist
+tags: 
+colorID: 0
+position: 356,830
+---
+<< if $visit_Novelist is false>> 
+    Apprentice: Hey. 
+    Novelist: Oh! Hi. 
+    Novelist: You snuck up on me.
+    <<set $visit_Novelist to true>>
+<<else>>
+    Apprentice: Hey. 
+    Novelist: Hi. 
+<<endif>>
+<<if $visit_witch is true>>
+    [[Can I have a letter.|Novelist.Letter]]
+<<endif>> 
+[[See you later.|Novelist.Exit]]
+===
+title: Novelist.Exit
+tags: 
+colorID: 0
+position: 586,830
+---
+Novelist: Okay, goodbye.
+===
+title: Novelist.Letter
+tags: 
+colorID: 2
+position: 356,1060
+---
+<< if $tear is false>>
+    Novelist: Heres the quest item. 
+    Apprentice: Alright cool. 
+    << set $tear to true>>
+<<elseif $tear is true>>
+    Novelist: Didn't I alradey give you one?
+    Apprentice: 😳 yes. 
+<< endif >>
+[[See you later.|Novelist.Exit]]
+===
