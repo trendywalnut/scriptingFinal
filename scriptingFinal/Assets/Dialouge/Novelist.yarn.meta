@@ -7,8 +7,8 @@ ScriptedImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: en-US
+  script: {instanceID: 0}
+  baseLanguageID: 
   stringIDs:
   - Novelist-Novelist-0
   - Novelist-Novelist-1
@@ -26,6 +26,5 @@ ScriptedImporter:
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {fileID: 7128917941130120860, guid: cc04e2ac53005a944a8f18deef2d9a4c,
-    type: 3}
+  baseLanguage: {instanceID: 0}
   localizations: []
