@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-50.93955993652344,"y":7.470861434936523,"z":4.125387191772461},"rotation":{"x":-0.0012541465694084764,"y":0.9378693699836731,"z":-0.34756726026535036,"w":-0.000515612424351275},"size":19.3760986328125,"orthographic":false}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-28.944793701171876,"y":-8.443761825561524,"z":19.740568161010743},"rotation":{"x":0.14179813861846925,"y":-0.5405032634735107,"z":0.09300187230110169,"w":0.824084997177124},"size":40.932674407958987,"orthographic":false}
 >>>>>>> 7a96ec9cc47320405f9b1ea8d17306c10ef38193
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":17.57555389404297,"y":4.241213798522949,"z":6.789767265319824},"rotation":{"x":0.1670655459165573,"y":-0.7747204899787903,"z":0.22899268567562104,"w":0.5652112364768982},"size":17.033679962158204,"orthographic":false}
+>>>>>>> Stashed changes
