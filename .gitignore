@@ -9,6 +9,7 @@ scriptingFinal/[Bb]uild/
 scriptingFinal/[Bb]uilds/
 scriptingFinal/[Ll]ogs/
 scriptingFinal/[Mm]emoryCaptures/
+scriptingFinal/[Uu]ser[Ss]ettings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !scriptingFinal/[Aa]ssets/**/*.meta
@@ -53,8 +54,12 @@ sysinfo.txt
 
 # Builds
 *.apk
+*.aab
 *.unitypackage
 
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Temporary auto-generated Android Assets
+scriptingFinal/[Aa]ssets/[Ss]treamingAssets/aa.meta
+scriptingFinal/[Aa]ssets/[Ss]treamingAssets/aa/*
