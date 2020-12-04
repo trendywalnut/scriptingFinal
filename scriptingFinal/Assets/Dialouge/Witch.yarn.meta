@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: 8eca5d69c7de5ca4bbaedec8a3e61f8c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Ship-Ship-0
+  - Ship-Ship-1
+  - Ship-Ship-2
+  - Ship-Ship-3
+  - Ship-Ship-4
+  - Ship-Ship-5
+  - Ship-Ship-6
+  - Ship-Ship-7
+  - Ship-Ship-8
+  - Ship-Ship-9
+  - Ship-Ship-10
+  - Ship-Ship-11
+  - Ship-Ship-12
+  - Ship-Ship-13
+  - Ship-Ship-14
+  - Ship-Ship-15
+  - Ship-Ship-16
+  - Ship-Ship-17
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 8eca5d69c7de5ca4bbaedec8a3e61f8c,
+    type: 3}
+  localizations: []

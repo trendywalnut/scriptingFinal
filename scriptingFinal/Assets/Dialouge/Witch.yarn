@@ -1,0 +1,33 @@
+title: Witch
+tags: 
+colorID: 0
+position: 721,130
+---
+<<if $visit_witch is false>>
+    Witch: Whats up bitch.  
+    Apprentice: Ayyyy. 
+    Apprentice: Ready to get boppin? 
+    Witch: Oh, man. 
+    Witch: Let's FUCKING GOOOO!!!!
+    -> Nommegies
+        Witch: Ligma
+    -> farders
+        Witch: Die challange
+    Witch: aight so like.... you need to get a letter with some hoe tears on it.
+    Apprentice: OK.
+    <<set $visit_witch to true>>
+<<else>>
+    Witch: Bruh!! GTFO!! 
+<<endif>>
+
+<<if $tear is true and $game_complete is false>>
+    Player: I got the tears omegalul 
+    Witch: She totally did!! 
+    Witch: Today I will make a potion.
+    Witch: Aight... 
+    Witch: Poggers! Heres the potion. 
+    <<set $game_complete to true>>
+    <<wait 1>>
+    Apprentice: Poggers. 
+<<endif>>
+===
