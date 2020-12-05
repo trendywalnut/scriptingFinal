@@ -7,7 +7,7 @@ ScriptedImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  script: {instanceID: 0}
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: 
   stringIDs:
   - Witch-Witch-0
@@ -28,6 +28,20 @@ ScriptedImporter:
   - Witch-Witch-15
   - Witch-Witch-16
   - Witch-Witch-17
+  - Witch-Witch-18
+  - Witch-Witch-19
+  - Witch-Witch-20
+  - Witch-Witch-21
+  - Witch-Witch-22
+  - Witch-Witch-23
+  - Witch-Witch-24
+  - Witch-Witch-25
+  - Witch-Witch-26
+  - Witch-Witch.Question-27
+  - Witch-Witch.Question-28
+  - Witch-Witch.Question-29
+  - Witch-Witch.Make_Potion-30
+  - Witch-Witch.Exit-31
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
