@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: aa63fbbeb98aab64d9c92b2e16e4c184
+=======
+guid: f76a18c9384840745b534c5ba4dffa8c
+>>>>>>> parent of ce502e91... dialouge improvements
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
