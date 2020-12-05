@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: a254e4454e4d86548a0c14ecce9880cc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Salamander-Salamander-0
+  - Salamander-Salamander-1
+  - Salamander-Salamander-2
+  - Salamander-Salamander-3
+  - Salamander-Salamander-4
+  - Salamander-Salamander-5
+  - Salamander-Salamander-6
+  - Salamander-Salamander.Crying-7
+  - Salamander-Salamander.Exit-8
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: a254e4454e4d86548a0c14ecce9880cc,
+    type: 3}
+  localizations: []

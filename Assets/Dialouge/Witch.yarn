@@ -17,6 +17,7 @@ position: 721,130
     Witch: Such as: A dried fruit from the oldest tree.
     Witch: A salamanders tail, and finally, the tears of a lover.
     Witch: Let me get the ingredients...
+    <<wait .2>>
     Witch: ...oh my!
     Witch: It seems the tears I have experied.
     Witch: ...must have gotten a divorce...
@@ -36,10 +37,12 @@ position: 721,130
     <<endif>>
 <<endif>>
 
-<<if $left is false>>
-[[Where will it be?|Witch.Question]]
+<<if $tears is true>>
+    [[I have the tears! |Witch.Make_Potion]]
 <<endif>>
-[[Goodbye |Witch.Exit]]
+
+    [[Where will it be?|Witch.Question]]
+    [[Goodbye |Witch.Exit]]
 ===
 title: Witch.Question
 tags: 
@@ -56,11 +59,18 @@ colorID: 2
 position: 356,1060
 ---
 Witch: Potion make.
+<<set $game_complete to true>>
+[[Okay good |Witch.Exit]]
 ===
 title: Witch.Exit
 tags: 
 colorID: 2
 position: 356,1060
 ---
-Witch: Alright, good luck!
+<<if $game_complete is true>>
+    Witch: Good job!
+    Witch: I'm so proud of you!
+<<else>>
+    Witch: Alright, good luck!
+<<endif>>
 ===

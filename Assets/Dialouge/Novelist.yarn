@@ -4,6 +4,7 @@ colorID: 0
 position: 356,830
 ---
 << if $visit_Novelist is false>> 
+    <<set $left to true>>
     Apprentice: Hey. 
     Novelist: Oh! Hi. 
     Novelist: You snuck up on me.
