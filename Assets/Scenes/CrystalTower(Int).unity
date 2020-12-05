@@ -1998,6 +1998,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 783edd4dbf1b344f3895076382f9eb27, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &2569587156011189876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,6 +2204,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -729298127850226869, guid: a8d69f1a2651b364493a38622b203713, type: 3}
+=======
+>>>>>>> parent of 9699aab9... cmon bruh
 =======
 >>>>>>> parent of 9699aab9... cmon bruh
 =======
