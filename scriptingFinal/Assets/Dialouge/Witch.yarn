@@ -4,30 +4,63 @@ colorID: 0
 position: 721,130
 ---
 <<if $visit_witch is false>>
-    Witch: Whats up bitch.  
-    Apprentice: Ayyyy. 
-    Apprentice: Ready to get boppin? 
-    Witch: Oh, man. 
-    Witch: Let's FUCKING GOOOO!!!!
-    -> Nommegies
-        Witch: Ligma
-    -> farders
-        Witch: Die challange
-    Witch: aight so like.... you need to get a letter with some hoe tears on it.
-    Apprentice: OK.
+    Witch: Hello there my apprentice.  
+    Witch: Are you ready to start your lesson for the day?
+    -> Absolutely! I can't wait!
+        Witch: That's great
+    -> More or less...
+        Witch: Well you better get ready then!
+    Witch: Beacuse, today we are making a potion of beastmorph.
+    -> Woah!!!
+    -> Sounds kinda lame...
+    Witch: This will require a few ingredients.
+    Witch: Such as: A dried fruit from the oldest tree.
+    Witch: A salamanders tail, and finally, the tears of a lover.
+    Witch: Let me get the ingredients...
+    Witch: ...oh my!
+    Witch: It seems the tears I have experied.
+    Witch: ...must have gotten a divorce...
+    Witch: Well Apprentice, it seems you need to go to the basement for some ingredients.
+    -> Yes, mam!
+    -> How exciting...
+    Witch: Here is the key to the basement.
+    Witch: There should be some down there.
     <<set $visit_witch to true>>
+<<elseif $left is false>>
+    Witch: Oh!
+    Witch: Do you have anymore questions?    
 <<else>>
-    Witch: Bruh!! GTFO!! 
+    Witch: Do you have the tears?
+    <<if $tears is true>>
+    [[Yes I do! |Witch.Make_Potion ]]
+    <<endif>>
 <<endif>>
 
-<<if $tear is true and $game_complete is false>>
-    Player: I got the tears omegalul 
-    Witch: She totally did!! 
-    Witch: Today I will make a potion.
-    Witch: Aight... 
-    Witch: Poggers! Heres the potion. 
-    <<set $game_complete to true>>
-    <<wait 1>>
-    Apprentice: Poggers. 
+<<if $left is false>>
+[[Where will it be?|Witch.Question]]
 <<endif>>
+[[Goodbye |Witch.Exit]]
+===
+title: Witch.Question
+tags: 
+colorID: 2
+position: 356,1060
+---
+    Novelist: Well, someone should proably be in love down there! 
+    Apprentice: ...  
+[[Okay, thanks.|Witch.Exit]]
+===
+title: Witch.Make_Potion
+tags: 
+colorID: 2
+position: 356,1060
+---
+Witch: Potion make.
+===
+title: Witch.Exit
+tags: 
+colorID: 2
+position: 356,1060
+---
+Witch: Alright, good luck!
 ===

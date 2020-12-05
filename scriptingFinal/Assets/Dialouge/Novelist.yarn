@@ -29,13 +29,13 @@ tags:
 colorID: 2
 position: 356,1060
 ---
-<< if $tear is false>>
+<< if $letter is false>>
     Novelist: Heres the quest item. 
     Apprentice: Alright cool. 
-    << set $tear to true>>
-<<elseif $tear is true>>
+    << set $letter to true>>
+<<elseif $letter is true>>
     Novelist: Didn't I alradey give you one?
-    Apprentice: 😳 yes. 
+    Apprentice: yes. 
 << endif >>
 [[See you later.|Novelist.Exit]]
 ===
