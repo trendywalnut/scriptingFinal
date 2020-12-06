@@ -10,6 +10,7 @@ TagManager:
   - ToLake
   - ToTowerOut
   - ToTowerIn
+  - LevelDisplay
   layers:
   - Default
   - TransparentFX

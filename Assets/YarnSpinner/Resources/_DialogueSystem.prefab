@@ -1116,7 +1116,6 @@ GameObject:
   - component: {fileID: 5935829475398715329}
   - component: {fileID: 5935829475398715334}
   - component: {fileID: 5935829475398715335}
-  - component: {fileID: 1167407617514715649}
   m_Layer: 0
   m_Name: Dialogue Runner
   m_TagString: Untagged
@@ -1313,18 +1312,6 @@ MonoBehaviour:
     value: false
     type: 2
   debugTextView: {fileID: 802046071323647957}
---- !u!114 &1167407617514715649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5935829475398715332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43a74ec40541e9f49bed8598051d6a6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5935829475522760373
 GameObject:
   m_ObjectHideFlags: 0

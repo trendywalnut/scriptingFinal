@@ -32,16 +32,13 @@ position: 721,130
     Witch: Do you have any more questions?    
 <<else>>
     Witch: Do you have the tears?
-    <<if $tears is true>>
-    [[Yes I do! |Witch.Make_Potion ]]
-    <<endif>>
 <<endif>>
 
 <<if $tears is true>>
     [[I have the tears! |Witch.Make_Potion]]
-<<endif>>
-
+<<else>>
     [[Where will it be?|Witch.Question]]
+<<endif>>
     [[Goodbye |Witch.Exit]]
 ===
 title: Witch.Question
@@ -60,10 +57,12 @@ position: 356,1060
 ---
 Witch: Alright! Give it here.
 <<wait .2>>
-Witch: Wow, would you look at that!
+Witch: Would you like to do the honors of mixing the brew?
+    -> You bet!
+    -> If I have to...
 <<set $game_complete to true>>
 <<set $tears to false>>
-[[Okay good |Witch.Exit]]
+<<stop>>
 ===
 title: Witch.Exit
 tags: 
