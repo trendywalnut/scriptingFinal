@@ -5,7 +5,6 @@ using TMPro;
 
 public class MiniGameController : MonoBehaviour
 {
-
     private Transform tf;
     private Transform topTf, botTf;
 
@@ -25,13 +24,16 @@ public class MiniGameController : MonoBehaviour
 
     private void Start()
     {
+        // Get transform for player block
         tf = GetComponent<Transform>();
+        // Get transform for bottom and top of goal
         topTf = top.GetComponent<Transform>();
         botTf = bottom.GetComponent<Transform>();
     }
 
     private void Update()
     {
+        //Minigame Start
         if(Input.GetKeyDown(KeyCode.Space))
         {
             gameStarted = true;
@@ -40,22 +42,26 @@ public class MiniGameController : MonoBehaviour
 
         if(gameStarted)
         {
+            //Clamps player block Y
             if (tf.position.y > minY)
             {
                 tf.Translate(Vector3.down * gravity);
             }
 
+            //Jump code (also checks to make sure you're below maxY and that the game is still running)
             if (Input.GetKeyDown(KeyCode.Space) && tf.position.y < maxY && mixPercent < 100 && maxTime > 0)
             {
                 tf.Translate(Vector3.up * jumpForce);
             }
 
+            //Increases and displays mix percent when in the bounds of the goal
             if (tf.position.y > botTf.position.y && topTf.position.y > tf.position.y && mixPercent < 100)
             {
                 mixPercent += .07f;
                 percentText.text = "Mix Percent: " + (int)mixPercent + "%";
             }
 
+            //Dispaly win text when you win, else keep ticking the clock down
             if (mixPercent > 99)
             {
                 winText.SetActive(true);
@@ -66,6 +72,7 @@ public class MiniGameController : MonoBehaviour
                 timerText.text = "Time Left: " + maxTime.ToString("F1");
             }
 
+            //Display lose text, allow player to restart minigame, and resets values
             if (maxTime <= 0.001f)
             {
                 loseText.SetActive(true);
