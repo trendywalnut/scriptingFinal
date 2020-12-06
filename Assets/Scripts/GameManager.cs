@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     //not all scenes are in the index yet, so extra code will have to be added once the tower gets added to play the correct track
     void Update()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2)
         {
             if (aS.clip != clipsMusic[0] || !aS.isPlaying)
             {
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
                 aS.Play();
             }
         }
-        if (SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 4)
         {
             if (aS.clip != clipsMusic[1] || !aS.isPlaying)
             {
@@ -49,14 +49,14 @@ public class GameManager : MonoBehaviour
                 aS.Play();
             }
         }
-        if (SceneManager.GetActiveScene().buildIndex == 4 || SceneManager.GetActiveScene().buildIndex == 5)
+        if (SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6)
         {
             if (aS.clip != clipsMusic[3] || !aS.isPlaying)
             {
                 aS.clip = clipsMusic[3];
                 aS.Play();
             }
-        }if (SceneManager.GetActiveScene().buildIndex == 6)
+        }if (SceneManager.GetActiveScene().buildIndex == 7)
         {
             if (aS.clip != clipsMusic[4] || !aS.isPlaying)
             {
