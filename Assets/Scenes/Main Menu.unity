@@ -507,8 +507,8 @@ RectTransform:
   m_Father: {fileID: 1303469118}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1025,7 +1025,29 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2005615548}
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2005615547}
+        m_MethodName: onChangeMusicVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &867591254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,7 +1861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1582204518
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2086,7 +2108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1848552897
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2321,7 +2343,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2374,6 +2396,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsMusic.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsMusic.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 78942e8592fe2a74a80f25ca25e7d213, type: 3}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsMusic.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 619507c510b87ca4a82b089fc8a5dec2, type: 3}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsMusic.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 78ea365c5934ccb42b884f8f9c30a978, type: 3}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsMusic.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: a99754f676687f042a5bb33f8ef0dc97, type: 3}
     - target: {fileID: 2485105566849029749, guid: fa28717d527825841913d9a31a1479b9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2447,7 +2494,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 78942e8592fe2a74a80f25ca25e7d213, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2533,3 +2580,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2005615547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005615545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1be8eed47eef2a4bb6c56540bb219de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 735353207}
+--- !u!114 &2005615548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005615545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a23eb245c478347a71a76c27f23295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
