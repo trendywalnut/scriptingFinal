@@ -298,17 +298,17 @@ PrefabInstance:
     - target: {fileID: 6752923333215793152, guid: 626adbaa6fe497d49963c874c324f5e5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.750913
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6752923333215793152, guid: 626adbaa6fe497d49963c874c324f5e5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.02
+      value: 4.42
       objectReference: {fileID: 0}
     - target: {fileID: 6752923333215793152, guid: 626adbaa6fe497d49963c874c324f5e5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.34164
+      value: 11.26
       objectReference: {fileID: 0}
     - target: {fileID: 6752923333215793152, guid: 626adbaa6fe497d49963c874c324f5e5,
         type: 3}
@@ -1080,6 +1080,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 126693018}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &158926097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 158926100}
+  - component: {fileID: 158926099}
+  - component: {fileID: 158926098}
+  m_Layer: 0
+  m_Name: Trigger to Witch (1)
+  m_TagString: ToTowerIn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &158926098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158926097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b9f9379ef3c4f46aad31e53fa9e8f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &158926099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158926097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.83379, y: 2.8169188, z: 2.6735315}
+  m_Center: {x: 0.14522618, y: 0.04598832, z: 1.4827052}
+--- !u!4 &158926100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158926097}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 14.33, y: 4.99, z: -0.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &159945216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13216,6 +13273,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1861239026}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1875432122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1875432125}
+  - component: {fileID: 1875432124}
+  - component: {fileID: 1875432123}
+  m_Layer: 0
+  m_Name: Trigger to Split
+  m_TagString: ToSplit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1875432123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875432122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b9f9379ef3c4f46aad31e53fa9e8f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1875432124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875432122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.83379, y: 2.8169188, z: 7.854453}
+  m_Center: {x: 0.14522618, y: 0.04598832, z: 0.6182685}
+--- !u!4 &1875432125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875432122}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 15.17, y: 4.36, z: 16.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1879416480
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -58,7 +58,9 @@ tags:
 colorID: 2
 position: 356,1060
 ---
-Witch: Potion make.
+Witch: Alright! Give it here.
+<<wait .2>>
+Witch: Wow, would you look at that!
 <<set $game_complete to true>>
 [[Okay good |Witch.Exit]]
 ===

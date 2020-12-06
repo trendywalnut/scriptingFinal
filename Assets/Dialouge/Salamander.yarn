@@ -9,6 +9,7 @@ position: 552,586
     Salamander: I am so alone I swear
     Apprentice: dang
     Salamander: if only I had something to mend my broken heart.
+    <<set $visit_salamander to true>>
 << else >>
     Salamander: Hello again.
 << endif >>

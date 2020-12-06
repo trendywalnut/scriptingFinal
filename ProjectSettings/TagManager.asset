@@ -6,6 +6,10 @@ TagManager:
   tags:
   - ToPath
   - ToWitch
+  - ToSplit
+  - ToLake
+  - ToTowerOut
+  - ToTowerIn
   layers:
   - Default
   - TransparentFX

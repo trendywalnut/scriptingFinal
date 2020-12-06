@@ -20,6 +20,22 @@ public class SceneHandler : MonoBehaviour
             {
                 SceneManager.LoadScene(1);
             }
+            else if (this.gameObject.tag == "ToSplit")
+            {
+                SceneManager.LoadScene(3);
+            }
+            else if (this.gameObject.tag == "ToLake")
+            {
+                SceneManager.LoadScene(4);
+            }
+            else if (this.gameObject.tag == "ToTowerOut")
+            {
+                SceneManager.LoadScene(5);
+            }
+            else if (this.gameObject.tag == "ToTowerIn")
+            {
+                SceneManager.LoadScene(6);
+            }
         }
     }
 }
