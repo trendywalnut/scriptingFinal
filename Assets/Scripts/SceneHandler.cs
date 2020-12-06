@@ -26,32 +26,32 @@ public class SceneHandler : MonoBehaviour
             inTrigger = true;
             if (this.gameObject.tag == "ToPath")
             {
-                goToScene = 2;
+                goToScene = 3;
                 levelDisplay.text = "Press \"Space\" to go to Path ";
             }
             else if (this.gameObject.tag == "ToWitch")
             {
-                goToScene = 1;
+                goToScene = 2;
                 levelDisplay.text = "Press \"Space\" to go to the Witch's Hut ";
             }
             else if (this.gameObject.tag == "ToSplit")
             {
-                goToScene = 3;
+                goToScene = 4;
                 levelDisplay.text = "Press \"Space\" to go to the Crossroads ";
             }
             else if (this.gameObject.tag == "ToLake")
             {
-                goToScene = 6;
+                goToScene = 7;
                 levelDisplay.text = "Press \"Space\" to go to The Lake of Fire ";
             }
             else if (this.gameObject.tag == "ToTowerOut")
             {
-                goToScene = 4;
+                goToScene = 5;
                 levelDisplay.text = "Press \"Space\" to go to The Crystal Tower ";
             }
             else if (this.gameObject.tag == "ToTowerIn")
             {
-                goToScene = 5;
+                goToScene = 6;
                 levelDisplay.text = "Press \"Space\" to go to in to the Crystal Tower ";
             }
         }

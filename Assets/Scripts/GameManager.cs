@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     //add clips in the order MAIN MENU | FOREST | TOWER | LAKE OF FIRE (also rename to this from final boss music)
     public AudioClip[] clipsMusic;
     //can be added in any order, just make sure it lines up with the other scripts calling the public method
+    // 0 + 1 footsteps, 2 menu select, 3 click select, 4 torch, 5 lava
     public AudioClip[] clipsSound;
     //add audio source to game manager prefab
     private AudioSource aS;
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
         {
             DontDestroyOnLoad(this.gameObject);
         }
+        aS = GetComponent<AudioSource>();
     }
 
 
@@ -51,16 +53,16 @@ public class GameManager : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6)
         {
-            if (aS.clip != clipsMusic[3] || !aS.isPlaying)
+            if (aS.clip != clipsMusic[2] || !aS.isPlaying)
             {
-                aS.clip = clipsMusic[3];
+                aS.clip = clipsMusic[2];
                 aS.Play();
             }
         }if (SceneManager.GetActiveScene().buildIndex == 7)
         {
-            if (aS.clip != clipsMusic[4] || !aS.isPlaying)
+            if (aS.clip != clipsMusic[3] || !aS.isPlaying)
             {
-                aS.clip = clipsMusic[4];
+                aS.clip = clipsMusic[3];
                 aS.Play();
             }
         }
