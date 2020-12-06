@@ -29,9 +29,9 @@ public class CameraMovement : MonoBehaviour
     {
         playerX = player.transform.position.x;
 
-        if (playerX >= -44)
+        if (playerX >= -35)
         {
-            goalPos = new Vector3(-44, startingY, startingZ);
+            goalPos = new Vector3(-35, startingY, startingZ);
         }
         else if (playerX <= -57)
         {
