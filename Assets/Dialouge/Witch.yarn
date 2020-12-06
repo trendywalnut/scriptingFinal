@@ -10,16 +10,16 @@ position: 721,130
         Witch: That's great
     -> More or less...
         Witch: Well you better get ready then!
-    Witch: Beacuse, today we are making a potion of beastmorph.
+    Witch: Because today we are making a potion of beastmorph.
     -> Woah!!!
     -> Sounds kinda lame...
     Witch: This will require a few ingredients.
-    Witch: Such as: A dried fruit from the oldest tree.
+    Witch: A dried fruit from the oldest tree.
     Witch: A salamanders tail, and finally, the tears of a lover.
     Witch: Let me get the ingredients...
     <<wait .2>>
     Witch: ...oh my!
-    Witch: It seems the tears I have experied.
+    Witch: It seems the tears I have expired.
     Witch: ...must have gotten a divorce...
     Witch: Well Apprentice, it seems you need to go to the basement for some ingredients.
     -> Yes, mam!
@@ -29,7 +29,7 @@ position: 721,130
     <<set $visit_witch to true>>
 <<elseif $left is false>>
     Witch: Oh!
-    Witch: Do you have anymore questions?    
+    Witch: Do you have any more questions?    
 <<else>>
     Witch: Do you have the tears?
     <<if $tears is true>>
@@ -49,7 +49,7 @@ tags:
 colorID: 2
 position: 356,1060
 ---
-    Novelist: Well, someone should proably be in love down there! 
+    Witch: Well, someone should probably be in love down there! 
     Apprentice: ...  
 [[Okay, thanks.|Witch.Exit]]
 ===
@@ -62,6 +62,7 @@ Witch: Alright! Give it here.
 <<wait .2>>
 Witch: Wow, would you look at that!
 <<set $game_complete to true>>
+<<set $tears to false>>
 [[Okay good |Witch.Exit]]
 ===
 title: Witch.Exit
