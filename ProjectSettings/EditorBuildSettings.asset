@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LakeOfFire.unity
     guid: 2addc1f8895c5764f943411e26b9fbf9
+  - enabled: 1
+    path: Assets/Scenes/Minigame.unity
+    guid: 387ba20e8077b1d4291aa8db87b017de
   m_configObjects: {}
