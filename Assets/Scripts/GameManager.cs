@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
         {
             DontDestroyOnLoad(this.gameObject);
         }
+        aS = GetComponent<AudioSource>();
     }
 
 
@@ -51,16 +52,16 @@ public class GameManager : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6)
         {
-            if (aS.clip != clipsMusic[3] || !aS.isPlaying)
+            if (aS.clip != clipsMusic[2] || !aS.isPlaying)
             {
-                aS.clip = clipsMusic[3];
+                aS.clip = clipsMusic[2];
                 aS.Play();
             }
         }if (SceneManager.GetActiveScene().buildIndex == 7)
         {
-            if (aS.clip != clipsMusic[4] || !aS.isPlaying)
+            if (aS.clip != clipsMusic[3] || !aS.isPlaying)
             {
-                aS.clip = clipsMusic[4];
+                aS.clip = clipsMusic[3];
                 aS.Play();
             }
         }

@@ -6,6 +6,7 @@ public class DialougeSaver : MonoBehaviour
 {
     void Awake()
     {
+        //finds dialogue and saves it in between scenes
         if (FindObjectsOfType<DialougeSaver>().Length > 1)
         {
             Destroy(this.gameObject);
