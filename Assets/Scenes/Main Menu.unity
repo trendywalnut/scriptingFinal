@@ -1359,6 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0dfa122f7df3e47bd2da8109186d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &654757137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,6 +3400,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
         type: 3}
+      propertyPath: clipsSound.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
       propertyPath: clipsMusic.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 78942e8592fe2a74a80f25ca25e7d213, type: 3}
@@ -3417,6 +3423,36 @@ PrefabInstance:
       propertyPath: clipsMusic.Array.data[3]
       value: 
       objectReference: {fileID: 8300000, guid: a99754f676687f042a5bb33f8ef0dc97, type: 3}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: af78ff90a4aa607419742fefdd5792a3, type: 3}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsSound.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 873674bf402fbb449808ec92ebb491d4, type: 3}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsSound.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: d2e0f9fa6c63a724b91fcebf84ac095f, type: 3}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsSound.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: c02289c1186aea04e9d2e3e04800e5c8, type: 3}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsSound.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7de4e98111ecf6f47a8711678ce0e936, type: 3}
+    - target: {fileID: 1505944466349477660, guid: fa28717d527825841913d9a31a1479b9,
+        type: 3}
+      propertyPath: clipsSound.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 137f619da9e794f4a885e2f9ab93d44d, type: 3}
     - target: {fileID: 2485105566849029749, guid: fa28717d527825841913d9a31a1479b9,
         type: 3}
       propertyPath: m_LocalPosition.x
