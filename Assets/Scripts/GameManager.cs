@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
-namespace Yarn.Unity
-{
     public class GameManager : MonoBehaviour
     {
         //private int health = 69;
@@ -77,4 +75,3 @@ namespace Yarn.Unity
             aS.PlayOneShot(clipsSound[index]);
         }
     }
-}

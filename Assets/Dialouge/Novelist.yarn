@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 356,830
 ---
+<<Talkers Player true>>
 << if $visit_Novelist is false>> 
     <<set $left to true>> 
     Novelist: Hello there little one. 
@@ -32,6 +33,7 @@ colorID: 0
 position: 586,830
 ---
 Novelist: Goodbye little one.
+<<Talkers Player false>>
 ===
 title: Novelist.Letter
 tags: 

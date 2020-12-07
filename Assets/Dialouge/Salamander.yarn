@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 552,586
 ---
+<<Talkers Player true>>
 << if $visit_salamander is false >>
     <<set $left to true>>
     Salamander: Hello, young witch.
@@ -49,6 +50,7 @@ colorID: 0
 position: 552,816
 ---
 Salamander: Goodbye...
+<<Talkers Player false>>
 ===
 title: Salamander.Are_You_Okay
 tags: 
