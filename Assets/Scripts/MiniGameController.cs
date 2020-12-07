@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MiniGameController : MonoBehaviour
 {
@@ -64,7 +65,8 @@ public class MiniGameController : MonoBehaviour
             //Dispaly win text when you win, else keep ticking the clock down
             if (mixPercent > 99)
             {
-                winText.SetActive(true);
+                SceneManager.LoadScene(10);
+                //winText.SetActive(true);
             }
             else if (maxTime >= 0)
             {
@@ -75,7 +77,8 @@ public class MiniGameController : MonoBehaviour
             //Display lose text, allow player to restart minigame, and resets values
             if (maxTime <= 0.001f)
             {
-                loseText.SetActive(true);
+                SceneManager.LoadScene(9);
+                //loseText.SetActive(true);
                 gameStarted = false;
                 maxTime = 12;
                 mixPercent = 0;
