@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 721,130
 ---
+<<Talkers Player true>>
 <<if $visit_witch is false>>
     Witch: Hello there my apprentice.  
     Witch: Are you ready to start your lesson for the day?
@@ -76,4 +77,5 @@ position: 356,1060
 <<else>>
     Witch: Alright, good luck!
 <<endif>>
+<<Talkers Player false>>
 ===

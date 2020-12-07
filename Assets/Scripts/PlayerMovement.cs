@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Yarn.Unity;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -43,14 +44,14 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-
-    public void textCheck()
+    [YarnCommand("Talkers")]
+    public void textCheck(string isText)
     {
-        if (dialogue.active)
+        if (isText == "true")
         {
             textShowing = true;
         }
-        else
+        else if (isText == "false")
         {
             textShowing = false;
         }

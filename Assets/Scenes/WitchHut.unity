@@ -4755,7 +4755,7 @@ PrefabInstance:
     - target: {fileID: 5935829475398715335, guid: 4ec3df5875e7347beb6176b545b8fb39,
         type: 3}
       propertyPath: defaultVariables.Array.data[2].value
-      value: true
+      value: false
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715335, guid: 4ec3df5875e7347beb6176b545b8fb39,
         type: 3}
