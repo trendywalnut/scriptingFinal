@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuFunction : MonoBehaviour
 {
+    //Author: Connor
     public GameManager gameManager;
 
     public void Awake()

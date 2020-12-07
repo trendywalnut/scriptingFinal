@@ -1,0 +1,81 @@
+title: Witch
+tags: 
+colorID: 0
+position: 721,130
+---
+<<Talkers Player true>>
+<<if $visit_witch is false>>
+    Witch: Hello there my apprentice.  
+    Witch: Are you ready to start your lesson for the day?
+    -> Absolutely! I can't wait!
+        Witch: That's great
+    -> More or less...
+        Witch: Well you better get ready then!
+    Witch: Because today we are making a potion of beastmorph.
+    -> Woah!!!
+    -> Sounds kinda lame...
+    Witch: This will require a few ingredients.
+    Witch: A dried fruit from the oldest tree.
+    Witch: A salamanders tail, and finally, the tears of a lover.
+    Witch: Let me get the ingredients...
+    <<wait .2>>
+    Witch: ...oh my!
+    Witch: It seems the tears I have expired.
+    Witch: ...must have gotten a divorce...
+    Witch: Well Apprentice, it seems you need to go to the basement for some ingredients.
+    -> Yes, mam!
+    -> How exciting...
+    Witch: Here is the key to the basement.
+    Witch: There should be some down there.
+    <<set $visit_witch to true>>
+<<elseif $left is false>>
+    Witch: Oh!
+    Witch: Do you have any more questions?    
+<<else>>
+    Witch: Do you have the tears?
+<<endif>>
+
+<<if $tears is true>>
+    [[I have the tears! |Witch.Make_Potion]]
+<<else>>
+    [[Where will it be?|Witch.Question]]
+<<endif>>
+    [[Goodbye |Witch.Exit]]
+===
+title: Witch.Question
+tags: 
+colorID: 2
+position: 356,1060
+---
+    Witch: Well, someone should probably be in love down there! 
+    Apprentice: ...  
+[[Okay, thanks.|Witch.Exit]]
+===
+title: Witch.Make_Potion
+tags: 
+colorID: 2
+position: 356,1060
+---
+Witch: Alright! Give it here.
+<<wait .2>>
+Witch: Would you like to do the honors of mixing the brew?
+    -> You bet!
+    -> If I have to...
+<<set $game_complete to true>>
+<<set $tears to false>>
+<<Minigame GoToGame>>
+<<stop>>
+===
+title: Witch.Exit
+tags: 
+colorID: 2
+position: 356,1060
+---
+<<if $game_complete is true>>
+    Witch: Good job!
+    Witch: I'm so proud of you!
+<<else>>
+    Witch: Alright, good luck!
+<<endif>>
+<<Talkers Player false>>
+===

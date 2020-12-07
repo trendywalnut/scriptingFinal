@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 7c4fe51b066374a429f771ff11e9a3bc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Novelist-Novelist-0
+  - Novelist-Novelist-1
+  - Novelist-Novelist-2
+  - Novelist-Novelist-3
+  - Novelist-Novelist-4
+  - Novelist-Novelist-5
+  - Novelist-Novelist-6
+  - Novelist-Novelist.Exit-7
+  - Novelist-Novelist.Letter-8
+  - Novelist-Novelist.Letter-9
+  - Novelist-Novelist.Letter-10
+  - Novelist-Novelist.Letter-11
+  - Novelist-Novelist.Letter-12
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: cc04e2ac53005a944a8f18deef2d9a4c,
+    type: 3}
+  localizations: []

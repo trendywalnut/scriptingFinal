@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MiniGameController : MonoBehaviour
 {
+    //Author: Joseph
     private Transform tf;
     private Transform topTf, botTf;
 

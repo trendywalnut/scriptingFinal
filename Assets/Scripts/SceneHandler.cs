@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class SceneHandler : MonoBehaviour
 {
+    //Author: Henry
+
     private bool inTrigger;
     private int goToScene;
     public Text levelDisplay;

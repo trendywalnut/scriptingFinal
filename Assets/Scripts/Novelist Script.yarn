@@ -1,0 +1,58 @@
+title: Novelist
+tags: 
+colorID: 0
+position: 356,830
+---
+<<Talkers Player true>>
+<< if $visit_Novelist is false>> 
+    <<set $left to true>> 
+    Novelist: Hello there little one. 
+    Novelist: What brings you to this humble novelist's tower?
+    -> I am on the search for tears of a lover
+    Novelist: Ah, a witch are you?
+    Novelist: Well, I might be able to help you.
+    Novelist: I write primarily romance myself, so maybe I could give you a sample of my work.
+    -> Can you cry for me?
+    Novelist: Hahah, no I'm sorry. I fear I've already cried all of my tears
+    -> Oh no.
+    -> Wait, what.
+    Novelist: So you'll need to bring one to someone else.
+    <<set $visit_Novelist to true>>
+<<else>>
+    Apprentice: Hey. 
+    Novelist: Hi. 
+<<endif>>
+<<if $visit_witch is true>>
+    [[Can I have a letter.|Novelist.Letter]]
+<<endif>> 
+[[See you later.|Novelist.Exit]]
+===
+title: Novelist.Exit
+tags: 
+colorID: 0
+position: 586,830
+---
+Novelist: Goodbye little one.
+<<Talkers Player false>>
+===
+title: Novelist.Letter
+tags: 
+colorID: 2
+position: 356,1060
+---
+<< if $letter is false>>
+    Novelist: Of course. Just give me a moment 
+    The Novelist writes upon a clean sheet of paper and fills it with a heart-wrenching tale.
+    It would bring you to tears, alas you have no love in your heart.
+    Novelist: Here you are.
+        -> Thank you!
+    Novelist: Of course!
+    << set $letter to true>>
+<<elseif $letter is true>>
+    Novelist: Didn't I alradey give you one?
+        -> Yes
+    Novelist: I only give out one page for free.
+    
+<< endif >>
+[[See you later.|Novelist.Exit]]
+===

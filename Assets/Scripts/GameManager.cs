@@ -6,10 +6,7 @@ using Yarn.Unity;
 
     public class GameManager : MonoBehaviour
     {
-        //private int health = 69;
-        //private bool slickwitit = false;
-        //public int integer;
-
+        //Author: Carlos
 
         //add clips in the order MAIN MENU | FOREST | TOWER | LAKE OF FIRE (also rename to this from final boss music)
         public AudioClip[] clipsMusic;
@@ -70,6 +67,7 @@ using Yarn.Unity;
             }
         }
 
+        //plays sound effect
         public void PlaySoundEffect(int index)
         {
             aS.PlayOneShot(clipsSound[index]);

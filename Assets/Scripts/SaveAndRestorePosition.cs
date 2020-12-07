@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 // Refrenced from: https://forum.unity.com/threads/how-to-change-the-players-start-location-to-where-they-left-the-scene.641518/
+//Modified by: Henry
 
 public class SaveAndRestorePosition : MonoBehaviour
 {

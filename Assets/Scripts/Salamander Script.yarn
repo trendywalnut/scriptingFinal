@@ -1,0 +1,77 @@
+title: Salamander
+tags: 
+colorID: 0
+position: 552,586
+---
+<<Talkers Player true>>
+<< if $visit_salamander is false >>
+    <<set $left to true>>
+    Salamander: Hello, young witch.
+        -> Woah! A talking lizard!
+        -> Hello, there big lizard.
+    Salamander: Are you not familiar with my kind?
+    Salamander: I am a Salamander.
+    The Salamander lets out a deep sigh.
+    <<set $visit_salamander to true>>
+<< else >>
+    Salamander: Hello again.
+<< endif >>
+
+<<if $letter is true>>
+    [[Read this please.|Salamander.Crying]]
+<<endif>>
+<<if $tears is false>>
+    [[Are you feeling alright?|Salamander.Are_You_Okay]]
+<<endif>>
+    [[Goodbye.|Salamander.Exit]]
+===
+title: Salamander.Crying
+tags: 
+colorID: 0
+position: 782,586
+---
+Salamander: Oh!
+The Salamander somehow manipulates the paper with its... hands?
+Paws?
+What do lizards have?
+Anyways, the Salamander looks over the paper as you wonder this, and you see a tear well up in their eye.
+Salamander: That was beautiful...
+A few large droplets hit the page, soaking it wet with the tears... presumably of a lover.
+    -> Hey, can I have that back?
+Salamander: Of course my child. I must thank you for your gift, but my kind has no need for flammable paper.
+Salamander: Especially because we never forget a thing, so it will be with me always.
+<< set $tears to true>>
+<< set $letter to false>>
+[[Goodbye.|Salamander.Exit]]
+===
+title: Salamander.Exit
+tags: 
+colorID: 0
+position: 552,816
+---
+Salamander: Goodbye...
+<<Talkers Player false>>
+===
+title: Salamander.Are_You_Okay
+tags: 
+colorID: 0
+position: 552,816
+---
+The Salamander lets out another sigh
+Salamander: Sorry, my child, I'm just feeling a bit melancholy today.
+    -> Why's that?
+    -> Don't care, didn't ask.
+Salamander: As you can probably see, I'm the only Salamander here.
+Salamander: All of my kind have migrated away from here
+Salamander: Or at least I think they have. 
+    -> That's so sad!
+    -> OK.
+Salamander: Now all I have is my broken heart.
+Salamander: I long for my lost loved ones.
+    -> Do you think you might... cry?
+Salamander: No, I feel pretty dry.
+<<wait 1>>
+Salamander: But.
+Salamander: If I had some moving poetry, I might.
+[[Goodbye.|Salamander.Exit]]
+===
