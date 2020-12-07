@@ -62,6 +62,7 @@ Witch: Would you like to do the honors of mixing the brew?
     -> If I have to...
 <<set $game_complete to true>>
 <<set $tears to false>>
+<<Minigame GoToGame>>
 <<stop>>
 ===
 title: Witch.Exit
