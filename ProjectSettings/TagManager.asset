@@ -12,6 +12,7 @@ TagManager:
   - ToTowerIn
   - LevelDisplay
   - PauseMenu
+  - Dialogue
   layers:
   - Default
   - TransparentFX
